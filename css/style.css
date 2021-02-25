@@ -14,6 +14,7 @@
   --primary-white-color: #ffffff;
   --logo-black-color: #000000;
   --adress-white-color: rgba(f, f, f, 0.6);
+  --background-dark-color: #2f303a;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
   color: var(--primary-text-color);
 
   font-family: var(--main-font);
+  font-weight: 400;
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
@@ -47,10 +49,10 @@ body {
 .logo-black {
   color: var(--logo-black-color);
 }
-/* Раскоментировать когда будет добавлен темный цвет фона на футер
+
 .logo-white {
   color: var(--primary-white-color);
-} */
+}
 .logo-web {
   color: var(--accent-color);
 }
@@ -83,6 +85,9 @@ body {
 }
 
 /* Hero */
+.hero {
+  background-color: var(--background-dark-color);
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -90,10 +95,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* Раскоментировать когда будет добавлен темный цвет фона
-  color: var(--primary-white-color); */
+  color: var(--primary-white-color);
 }
 .btn {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -119,6 +124,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
+.title-none {
+  visibility: hidden;
+}
+
 /* Advantages*/
 .advantages-title {
   font-weight: 700;
@@ -153,14 +163,19 @@ body {
   letter-spacing: 0.03em;
 }
 
-/*Адресс в футере*/
-/* Раскоментировать когда будет добавлен темный цвет фона
+.footer {
+  background-color: var(--background-dark-color);
+}
+.address-street {
+  color: var(--primary-white-color);
+}
 .address-contacts {
   color: var(--adress-white-color);
-} */
+}
 
 /*========= PORTFOLIO PAGE=========  */
 .filter-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
